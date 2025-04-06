@@ -1,0 +1,87 @@
+{
+  "name": "pretty-imports",
+  "displayName": "pretty-imports",
+  "description": "Organize imports onSave()",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact",
+    "onLanguage:vue"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "organizeImports.organize",
+        "title": "Organize Imports"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Organize Imports",
+      "properties": {
+        "organizeImports.localPrefixes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "@/",
+            "./",
+            "../",
+            "~/",
+            "#/",
+            "*/",
+            "src/"
+          ],
+          "description": "Prefixes that identify local imports (including relative paths)"
+        },
+        "organizeImports.treatRelativeAsLocal": {
+          "type": "boolean",
+          "default": true,
+          "description": "Treat relative imports (starting with ./ or ../) as local imports"
+        },
+        "organizeImports.sortMethod": {
+          "type": "string",
+          "enum": [
+            "alphabetical",
+            "length-asc",
+            "length-desc",
+            "length-then-alpha"
+          ],
+          "default": "length-desc",
+          "description": "Method to sort imports: alphabetical, length-asc (shortest first), length-desc (longest first), or length-then-alpha"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "node ./out/test/runTest.js"
+  },
+  "dependencies": {
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
