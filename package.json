@@ -1,15 +1,27 @@
 {
-  "name": "pretty-imports",
+  "name": "pretty-import",
   "displayName": "pretty-imports",
   "description": "Organize imports onSave()",
   "version": "0.0.1",
-  "publisher": "Ajaga Abdulbasit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajagatobby/pretty-imports.git"
+  },
+  "publisher": "pretty-imports",
   "preview": true,
   "icon": "assets/patch-blue-icon.png",
   "galleryBanner.color": {
     "color": "#0D47A1",
     "theme": "dark"
   },
+  "keywords": [
+    "imports",
+    "organize",
+    "typescript",
+    "javascript",
+    "formatter"
+  ],
+  "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
   },
