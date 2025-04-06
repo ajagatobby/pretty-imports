@@ -9,6 +9,8 @@
 - **Flexible Sorting**: Sort imports by length, alphabetically, or a combination of both
 - **Named Import Sorting**: Alphabetically sorts named imports within each import statement
 - **Customizable**: Extensive configuration options to match your project's style
+- **Keyboard Shortcut**: Use Ctrl+Alt+F to quickly organize imports
+- **Status Bar Integration**: One-click access from the status bar
 
 ## Installation
 
@@ -23,18 +25,12 @@ Pretty Imports works automatically when you save a file. No additional steps req
 
 ### Manual Organization
 
-You can also manually organize imports:
+You can organize imports in several ways:
 
-1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS)
-2. Type "Organize Imports" and select the command
-
-### Keyboard Shortcut
-
-You can assign a keyboard shortcut to the "Organize Imports" command:
-
-1. Open the Command Palette and type "Preferences: Open Keyboard Shortcuts"
-2. Search for "Organize Imports"
-3. Click the "+" icon to add a shortcut (e.g., `Ctrl+Alt+O` or `Cmd+Alt+O`)
+1. **Keyboard Shortcut**: Press `Ctrl+Alt+F` (or `Cmd+Alt+F` on macOS)
+2. **Command Palette**: Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS), type "Organize Imports" and select the command
+3. **Status Bar**: Click the "$(symbol-namespace) Organize Imports" button in the status bar
+4. **Format Document**: Use the standard VS Code format document command (`Shift+Alt+F`)
 
 ## Before and After
 

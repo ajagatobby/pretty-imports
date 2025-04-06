@@ -3,9 +3,10 @@
 src/**
 .gitignore
 .yarnrc
-vsc-extension-quickstart.md
-**/tsconfig.json
-**/eslint.config.mjs
+webpack.config.js
+node_modules/**
+tsconfig.json
+.eslintrc.json
 **/*.map
 **/*.ts
-**/.vscode-test.*
+!out/**
