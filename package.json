@@ -3,6 +3,13 @@
   "displayName": "pretty-imports",
   "description": "Organize imports onSave()",
   "version": "0.0.1",
+  "publisher": "Ajaga Abdulbasit",
+  "preview": true,
+  "icon": "assets/patch-blue-icon.png",
+  "galleryBanner.color": {
+    "color": "#0D47A1",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },

@@ -1,15 +1,5 @@
 ### Pretty Imports
 
-[
-
-](https://marketplace.visualstudio.com/items?itemName=your-publisher.pretty-imports)
-[
-
-](https://marketplace.visualstudio.com/items?itemName=your-publisher.pretty-imports)
-[
-
-](https://marketplace.visualstudio.com/items?itemName=your-publisher.pretty-imports)
-
 **Pretty Imports** automatically organizes your JavaScript and TypeScript import statements when you save a file. It separates third-party and local imports, sorts them according to your preferences, and keeps your code clean and consistent.
 
 ## Features
